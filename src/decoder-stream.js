@@ -3,7 +3,7 @@ import createPool from 'reuse-pool'
 import webworkify from 'webworkify'
 import toArrayBuffer from 'to-arraybuffer'
 
-import decodeWorker from './decode-worker'
+let decodeWorker = require.resolve('./decode-worker')
 
 const pool = createPool(function () {
   return webworkify(decodeWorker)

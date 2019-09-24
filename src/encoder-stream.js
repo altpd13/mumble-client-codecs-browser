@@ -2,7 +2,7 @@ import { Transform } from 'stream'
 import createPool from 'reuse-pool'
 import webworkify from 'webworkify'
 
-import encodeWorker from './encode-worker'
+let encodeWorker = require.resolve('./encode-worker')
 
 const pool = createPool(function () {
   return webworkify(encodeWorker)
