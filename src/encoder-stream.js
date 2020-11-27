@@ -57,5 +57,3 @@ export default class EncoderStream extends Transform {
     this._finalCallback = callback
   }
 }
-
-export default EncoderStream

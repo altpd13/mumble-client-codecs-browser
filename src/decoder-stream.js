@@ -68,5 +68,3 @@ export default class DecoderStream extends Transform {
     }
   }
 }
-
-export default DecoderStream
