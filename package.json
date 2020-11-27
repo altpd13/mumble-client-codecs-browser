@@ -30,7 +30,7 @@
     "chai": "^3.5.0",
     "mocha": "^3.0.2",
     "mocha-standard": "^1.0.0",
-    "standard": "^8.0.0"
+    "standard": "^10.0.0"
   },
   "dependencies": {
     "libopus.js": "0.0.1",
