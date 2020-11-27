@@ -9,7 +9,7 @@ const pool = createPool(function () {
 // Prepare first worker
 pool.recycle(pool.get())
 
-class DecoderStream extends Transform {
+export default class DecoderStream extends Transform {
   constructor () {
     super({ objectMode: true })
 
